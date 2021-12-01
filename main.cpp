@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include <limits>
+#include <math.h>
 
 using namespace std;
 
@@ -37,22 +38,41 @@ void feature_search_demo(const vector<vector<double>>& data){
     }
 }
 
+double euclidean_distance(vector<double> a, vector<double> b){
+    double sum = 0;
+    for(auto i : a)
+        sum += (a[i]-b[i])*(a[i]-b[i]);
+    return sqrt(sum);
+}
+
 float cross_validation(const vector<vector<double>>& data){
+    float accuracy = 0;
+    int num_correct = 0;
     for(int i = 0; i < data.size(); i++){
         vector<double> obj_to_classify = data[i];
         int label = data[i][0];
 
         double nearest_neighbor_dist = numeric_limits<double>::max();
-        double nearest_neighbor_loc = numeric_limits<double>::max();
+        int nearest_neighbor_loc = numeric_limits<int>::max();
+        int nearest_neighbor_label = numeric_limits<int>::max();
 
         for(int j = 0; j < data.size(); j++){
-            printf("Ask if %d is nearest neighbor with %d\n", i, j);
+            if(i != j){
+                double distance = euclidean_distance(obj_to_classify, data[j]);
+                if(distance < nearest_neighbor_dist){
+                    nearest_neighbor_dist = distance;
+                    nearest_neighbor_loc = j;
+                    nearest_neighbor_label = data[nearest_neighbor_loc][0];
+                }
+                //printf("Ask if %d is nearest neighbor with %d\n", i, j);
+            }
         }
-        // printf("Looping over i at the %d location\n", i);
-        // printf("The %dth object is in the class %d\n", i, label);
+        if(label == nearest_neighbor_label) num_correct++;
+        printf("Object %d is class %d\n", i, label);
+        printf("Its nearest neighbor is %d which is in class %d\n", nearest_neighbor_loc, nearest_neighbor_label);
     }
-    
-    return 1.0;
+    accuracy = (float) num_correct / data.size();
+    return accuracy;
 }
 
 int main(){
@@ -87,7 +107,8 @@ int main(){
     // }   
 
     // feature_search_demo(table);
-    cross_validation(table);
+    float res = cross_validation(table);
+    cout << res;
     
     return 0;
 }
