@@ -12,14 +12,15 @@ float leave_one_out_cross_validation(const vector<vector<double>>& data, unorder
     return accuracy;
 }
 
+
 void feature_search_demo(const vector<vector<double>>& data){
     float accuracy;
     unordered_set<int> curr_features;
-    for(int i = 1; i < data.size(); i++){
+    for(int i = 1; i < data[0].size(); i++){
+        cout << "On the " << i << "th level of the search tree" << endl;
         int feature_to_add = 0;
         float best_acc = 0;
-        cout << "On the " << i << "th level of the search tree" << endl;
-        for(int j = 1; j < data.size(); j++){
+        for(int j = 1; j < data[0].size(); j++){
             if(curr_features.find(feature_to_add) == curr_features.end()){
                 accuracy = leave_one_out_cross_validation(data,curr_features,j+1);
                 cout << "-- Consider adding the " << j << "th feature" << endl;
@@ -35,6 +36,15 @@ void feature_search_demo(const vector<vector<double>>& data){
     }
 }
 
+float cross_validation(const vector<vector<double>>& data){
+    for(int i = 0; i < data.size(); i++){
+        int label = data[i][0];
+        printf("Looping over i at the %d index\n", i);
+        printf("The %dth object is in the class %d\n", i, label);
+    }
+    return 1.0;
+}
+
 int main(){
     ifstream fin;
     fin.open("test.txt");
@@ -47,7 +57,7 @@ int main(){
     vector<vector<double>> table;
     string line;
     while(getline(fin,line)){
-        cout << line << endl;
+        //cout << line << endl;
         istringstream ss(line);
         double element;
         vector<double> temp;
@@ -56,15 +66,16 @@ int main(){
         table.push_back(temp);
     }
     
-    cout << endl << endl;
+    // cout << endl << endl;
 
-    for(auto& i: table){
-        for(auto j: i)
-            cout << j << ' ';
-        cout << endl;
-    }   
+    // for(auto& i: table){
+    //     for(auto j: i)
+    //         cout << j << ' ';
+    //     cout << endl;
+    // }   
 
     feature_search_demo(table);
+    // cross_validation(table);
     
     return 0;
 }
