@@ -7,14 +7,31 @@
 
 using namespace std;
 
-double leave_one_out_cross_validation(const vector<double>& data, unordered_set<int> current_set, int feature_to_add){
-    double accuracy = rand() % 100;
+float leave_one_out_cross_validation(const vector<vector<double>>& data, unordered_set<int> current_set, int feature_to_add){
+    float accuracy = rand() % 100;
     return accuracy;
 }
 
-void feature_search_demo(const vector<double>& data){
+void feature_search_demo(const vector<vector<double>>& data){
+    float accuracy;
+    unordered_set<int> curr_features;
     for(int i = 1; i < data.size(); i++){
-        cout << "On the " << i << "'th level of the search tree" << endl;
+        int feature_to_add = 0;
+        float best_acc = 0;
+        cout << "On the " << i << "th level of the search tree" << endl;
+        for(int j = 1; j < data.size(); j++){
+            if(curr_features.find(feature_to_add) == curr_features.end()){
+                accuracy = leave_one_out_cross_validation(data,curr_features,j+1);
+                cout << "-- Consider adding the " << j << "th feature" << endl;
+
+                if (accuracy > best_acc){
+                    best_acc = accuracy;
+                    feature_to_add = j;
+                }
+            }
+        }
+        printf("On level %d I added the feature %d to the current set\n", i, feature_to_add);
+        curr_features.insert(feature_to_add);
     }
 }
 
@@ -46,6 +63,8 @@ int main(){
             cout << j << ' ';
         cout << endl;
     }   
+
+    feature_search_demo(table);
     
     return 0;
 }
