@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <limits>
 
 using namespace std;
 
@@ -38,10 +39,19 @@ void feature_search_demo(const vector<vector<double>>& data){
 
 float cross_validation(const vector<vector<double>>& data){
     for(int i = 0; i < data.size(); i++){
+        vector<double> obj_to_classify = data[i];
         int label = data[i][0];
-        printf("Looping over i at the %d index\n", i);
-        printf("The %dth object is in the class %d\n", i, label);
+
+        double nearest_neighbor_dist = numeric_limits<double>::max();
+        double nearest_neighbor_loc = numeric_limits<double>::max();
+
+        for(int j = 0; j < data.size(); j++){
+            printf("Ask if %d is nearest neighbor with %d\n", i, j);
+        }
+        // printf("Looping over i at the %d location\n", i);
+        // printf("The %dth object is in the class %d\n", i, label);
     }
+    
     return 1.0;
 }
 
@@ -57,13 +67,15 @@ int main(){
     vector<vector<double>> table;
     string line;
     while(getline(fin,line)){
+        if(!line.empty()){
+            istringstream ss(line);
+            double element;
+            vector<double> temp;
+            while(ss >> element)
+                temp.push_back(element);
+            table.push_back(temp);
+        }
         //cout << line << endl;
-        istringstream ss(line);
-        double element;
-        vector<double> temp;
-        while(ss >> element)
-            temp.push_back(element);
-        table.push_back(temp);
     }
     
     // cout << endl << endl;
@@ -74,8 +86,8 @@ int main(){
     //     cout << endl;
     // }   
 
-    feature_search_demo(table);
-    // cross_validation(table);
+    // feature_search_demo(table);
+    cross_validation(table);
     
     return 0;
 }
