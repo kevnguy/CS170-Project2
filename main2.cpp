@@ -18,6 +18,42 @@ float leave_one_out_cross_validation(const vector<vector<float>>& data, vector<i
 }
 
 template <typename T>
+double sum(const vector<T>& col){
+	double sum = 0;
+	for(const auto& i : col) sum += i;
+	return sum;
+}
+
+template <typename T>
+double std_dev(const vector<T>& col){
+	vector<T> diff_square;
+	double col_mean = sum(col) / col.size();
+	double mean_sqr_diff = 0;
+	for(const auto& i : col)
+		diff_square.push_back((i - col_mean)*(i - col_mean));
+	mean_sqr_diff = (sum(diff_square) / (diff_square.size()-1));
+	return sqrt(mean_sqr_diff);
+}
+
+
+template <typename T>
+void z_normalize(vector<vector<T>>& table){
+	vector<T> temp;
+	double col_mean;
+	double standard_dev;
+	for(int i = 1; i < table[0].size(); i++){
+		temp.clear();
+		for(int j = 0; j < table.size(); j++)
+			temp.push_back(table[j][i]);
+		col_mean = sum(temp) / temp.size();
+		standard_dev = std_dev(temp);
+		if(standard_dev)
+			for(int k = 0; k < table.size(); k++)
+				table[k][i] = (table[k][i] - col_mean) / standard_dev;
+	}
+}
+
+template <typename T>
 float euclidean_distance(vector<T> a, vector<T> b){
     float sum = 0;
     for(int i = 1; i < a.size(); i++)
@@ -229,10 +265,10 @@ int main(){
     ifstream fin;
     //fin.open("Data\\Test\\test.txt");
     //fin.open("test2.txt");
-	//fin.open("Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
+	fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
 	//fin.open("Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
 	//fin.open("Data\\Ver_2_CS170_Fall_2021_LARGE_data__37.txt");
-	fin.open("Data\\Ver_2_CS170_Fall_2021_Small_data__24.txt");
+	//fin.open("Data\\Ver_2_CS170_Fall_2021_Small_data__24.txt");
 
     if(!fin.is_open()){
         cout << "Error opening file. Exiting..." << endl;
@@ -261,6 +297,13 @@ int main(){
     //     cout << endl;
     // }   
 
+	z_normalize(table);
+
+	// for(auto& i: table){
+    //     for(auto j: i)
+    //         cout << j << ' ';
+    //     cout << endl;
+    // }  
     //fsearch(table);
 	bsearch(table);
     // float res = cross_validation(table,set,4);
