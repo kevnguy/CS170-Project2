@@ -159,7 +159,7 @@ void fsearch(const vector<vector<float>>& data){
 	}
 
 	cout << endl << "------------------------- Results -------------------------" << endl;
-	cout << "Best accuracy acheived: " << global_acc << " using feature(s) { ";
+	cout << "Best accuracy achieved: " << global_acc << " using feature(s) { ";
 	for(const auto& i : best_features) cout << i << ' '; cout << '}' << endl;
 }
 
@@ -229,7 +229,7 @@ void bsearch(const vector<vector<float>>& data){
 		}
 	}
 	cout << endl << "------------------------- Results -------------------------" << endl;
-	cout << "Best accuracy acheived: " << global_acc << " using feature(s) { ";
+	cout << "Best accuracy achieved: " << global_acc << " using feature(s) { ";
 	for(const auto& i : best_features) cout << i << ' '; cout << '}' << endl;
 }
 
