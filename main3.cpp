@@ -8,22 +8,20 @@
 #include <algorithm>
 #include <numeric>
 
-//https://en.cppreference.com/w/cpp/algorithm/iota
-//https://www.mathsisfun.com/data/standard-deviation-formulas.html
-//https://www.statology.org/z-score-normalization/
-
 using namespace std;
 
-template <typename T>
-double sum(const vector<T>& col){
+
+// https://www.mathsisfun.com/data/standard-deviation-formulas.html
+// https://www.statology.org/z-score-normalization/
+// Helpers used for z-normalizing data
+double sum(const vector<float>& col){
 	double sum = 0;
 	for(const auto& i : col) sum += i;
 	return sum;
 }
 
-template <typename T>
-double std_dev(const vector<T>& col){
-	vector<T> diff_square;
+double std_dev(const vector<float>& col){
+	vector<float> diff_square;
 	double col_mean = sum(col) / col.size();
 	double mean_sqr_diff = 0;
 	for(const auto& i : col)
@@ -33,10 +31,9 @@ double std_dev(const vector<T>& col){
 }
 
 
-template <typename T>
-void z_normalize(vector<vector<T>>& table){
+void z_normalize(vector<vector<float>>& table){
 	cout << "Data set of " << table.size() << " with " << table[0].size()-1 << " features" << endl;
-	vector<T> temp;
+	vector<float> temp;
 	double col_mean;
 	double standard_dev;
 	for(int i = 1; i < table[0].size(); i++){
@@ -51,8 +48,8 @@ void z_normalize(vector<vector<T>>& table){
 	}
 }
 
-template <typename T>
-float euclidean_distance(const vector<T>& a, const vector<T>& b){
+
+float euclidean_distance(const vector<float>& a, const vector<float>& b){
     float sum = 0;
     for(int i = 1; i < a.size(); i++)
         sum += (a[i]-b[i])*(a[i]-b[i]);
@@ -104,8 +101,7 @@ float cross_val(vector<vector<float>> data, const vector<int>& current_set){
 		if(obj_label == nearest_neighbor_label) num_correct++;
 		// printf("Looping over i at the %d location\n", i);
 		// printf("The %dth object is in the class %d\n", i, obj_label);
-	}
-	//cout << ' ' << num_correct << "/" << data.size() << endl; 
+	} 
 	return (float) num_correct / data.size();
 }
 
@@ -265,16 +261,6 @@ int main(int argc, char *argv[]){
 	}
 	else
 		fin.open(argv[1]);
-    //fin.open("Data\\Test\\test.txt");
-    //fin.open("test2.txt");
-	//fin.open("Data\\Test\\edit.txt");
-	//fin.open("Data\\Test\\mod.txt");
-	//fin.open("Data/Test/Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
-	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
-	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_Small_data__61.txt");
-	//fin.open("Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
-	//fin.open("Data\\Ver_2_CS170_Fall_2021_LARGE_data__37.txt");
-	//fin.open("Data\\Ver_2_CS170_Fall_2021_Small_data__24.txt");
 
     if(!fin.is_open()){
         cout << "Error opening file: " << argv[1] << " Exiting..." << endl;
@@ -299,18 +285,6 @@ int main(int argc, char *argv[]){
 		cout << "Error. Invalid selection." << endl;
 		return -1;
 	}
-
-	// vector<int> curr_features(table[0].size()-1);
-	// iota(curr_features.begin(), curr_features.end(), 1);
-	// curr_features.pop_back();
-	// remove_feature(5,curr_features);
-	// clear_other_features(table,curr_features);
-
-	// for(auto& i: table){
-    //     for(auto j: i)
-    //         cout << j << ' ';
-    //     cout << endl;
-    // }
 
     return 0;
 }
