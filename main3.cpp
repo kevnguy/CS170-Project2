@@ -150,11 +150,19 @@ void fsearch(const vector<vector<float>>& data){
 		cout << "Added feature " << feature_to_add;
 		cout << ". Using feature(s) { ";
 		for(const auto& k : curr_features) cout << k << ' '; 
-		cout << "} accuracy is " << local_acc << endl;
-		
+		cout << "} accuracy is " << local_acc;
+
 		if(local_acc > global_acc){
 			global_acc = local_acc;
 			best_features = curr_features;
+			cout << endl;
+		}
+		else if(fabs(global_acc - local_acc) < 0.0001){
+			cout << ". Accuracy REMAINED the same" << endl;
+			best_features = curr_features;
+		}
+		else{
+			cout << ". Accuracy has DECREASED!" << endl;
 		}
 	}
 
