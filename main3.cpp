@@ -263,15 +263,13 @@ int main(int argc, char *argv[]){
 		cout << "Usage: " << argv[0] << " <path to file>" << endl;
 		exit(1);
 	}
-	if(argc > 1){
-		fin.open(argv[1]);
-	}
 	else
+		fin.open(argv[1]);
     //fin.open("Data\\Test\\test.txt");
     //fin.open("test2.txt");
 	//fin.open("Data\\Test\\edit.txt");
 	//fin.open("Data\\Test\\mod.txt");
-	fin.open("Data/Test/Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
+	//fin.open("Data/Test/Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
 	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
 	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_Small_data__61.txt");
 	//fin.open("Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
@@ -279,7 +277,7 @@ int main(int argc, char *argv[]){
 	//fin.open("Data\\Ver_2_CS170_Fall_2021_Small_data__24.txt");
 
     if(!fin.is_open()){
-        cout << "Error opening file. Exiting..." << endl;
+        cout << "Error opening file: " << argv[1] << " Exiting..." << endl;
         exit(1);
     }
 
