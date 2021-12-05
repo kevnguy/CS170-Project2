@@ -1,0 +1,22 @@
+    //fin.open("test2.txt");
+	//fin.open("Data\\Test\\edit.txt");
+	//fin.open("Data\\Test\\mod.txt");
+	//fin.open("Data/Test/Ver_2_CS170_Fall_2021_LARGE_data__22.txt");
+	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
+	//fin.open("Data\\Test\\Ver_2_CS170_Fall_2021_Small_data__61.txt");
+	//fin.open("Ver_2_CS170_Fall_2021_LARGE_data__27.txt");
+	//fin.open("Data\\Ver_2_CS170_Fall_2021_LARGE_data__37.txt");
+	//fin.open("Data\\Ver_2_CS170_Fall_2021_Small_data__24.txt");
+
+
+		// vector<int> curr_features(table[0].size()-1);
+	// iota(curr_features.begin(), curr_features.end(), 1);
+	// curr_features.pop_back();
+	// remove_feature(5,curr_features);
+	// clear_other_features(table,curr_features);
+
+	// for(auto& i: table){
+    //     for(auto j: i)
+    //         cout << j << ' ';
+    //     cout << endl;
+    // }
