@@ -1,0 +1,108 @@
+Data set of 500 with 10 features
+Beginning forward selection
+Default rate: 0.848
+On the 1 level of the search tree
+Added feature 5. Using feature(s) { 5 } accuracy is 0.858
+On the 2 level of the search tree
+Added feature 3. Using feature(s) { 5 3 } accuracy is 0.974
+On the 3 level of the search tree
+Added feature 8. Using feature(s) { 5 3 8 } accuracy is 0.95
+On the 4 level of the search tree
+Added feature 1. Using feature(s) { 5 3 8 1 } accuracy is 0.918
+On the 5 level of the search tree
+Added feature 4. Using feature(s) { 5 3 8 1 4 } accuracy is 0.898
+On the 6 level of the search tree
+Added feature 2. Using feature(s) { 5 3 8 1 4 2 } accuracy is 0.856
+On the 7 level of the search tree
+Added feature 10. Using feature(s) { 5 3 8 1 4 2 10 } accuracy is 0.822
+On the 8 level of the search tree
+Added feature 6. Using feature(s) { 5 3 8 1 4 2 10 6 } accuracy is 0.8
+On the 9 level of the search tree
+Added feature 9. Using feature(s) { 5 3 8 1 4 2 10 6 9 } accuracy is 0.772
+On the 10 level of the search tree
+Added feature 7. Using feature(s) { 5 3 8 1 4 2 10 6 9 7 } accuracy is 0.75
+
+------------------------- Results -------------------------
+Best accuracy acheived: 0.974 using feature(s) { 5 3 }
+
+Beginning backwards elimination
+Using all the features, accuracy is 0.75
+Beginning search
+On the 1 level of the search tree
+	Removing feature 1. Using feature(s) { 2 3 4 5 6 7 8 9 10 } accuracy is 0.774
+	Removing feature 2. Using feature(s) { 1 3 4 5 6 7 8 9 10 } accuracy is 0.778
+	Removing feature 3. Using feature(s) { 1 2 4 5 6 7 8 9 10 } accuracy is 0.732
+	Removing feature 4. Using feature(s) { 1 2 3 5 6 7 8 9 10 } accuracy is 0.778
+	Removing feature 5. Using feature(s) { 1 2 3 4 6 7 8 9 10 } accuracy is 0.718
+	Removing feature 6. Using feature(s) { 1 2 3 4 5 7 8 9 10 } accuracy is 0.766
+	Removing feature 7. Using feature(s) { 1 2 3 4 5 6 8 9 10 } accuracy is 0.772
+	Removing feature 8. Using feature(s) { 1 2 3 4 5 6 7 9 10 } accuracy is 0.798
+	Removing feature 9. Using feature(s) { 1 2 3 4 5 6 7 8 10 } accuracy is 0.754
+	Removing feature 10. Using feature(s) { 1 2 3 4 5 6 7 8 9 } accuracy is 0.754
+Removed feature 8. Using feature(s) { 1 2 3 4 5 6 7 9 10 } Accuracy is now 0.798
+On the 2 level of the search tree
+	Removing feature 1. Using feature(s) { 2 3 4 5 6 7 9 10 } accuracy is 0.804
+	Removing feature 2. Using feature(s) { 1 3 4 5 6 7 9 10 } accuracy is 0.81
+	Removing feature 3. Using feature(s) { 1 2 4 5 6 7 9 10 } accuracy is 0.776
+	Removing feature 4. Using feature(s) { 1 2 3 5 6 7 9 10 } accuracy is 0.774
+	Removing feature 5. Using feature(s) { 1 2 3 4 6 7 9 10 } accuracy is 0.74
+	Removing feature 6. Using feature(s) { 1 2 3 4 5 7 9 10 } accuracy is 0.808
+	Removing feature 7. Using feature(s) { 1 2 3 4 5 6 9 10 } accuracy is 0.766
+	Removing feature 9. Using feature(s) { 1 2 3 4 5 6 7 10 } accuracy is 0.778
+	Removing feature 10. Using feature(s) { 1 2 3 4 5 6 7 9 } accuracy is 0.798
+Removed feature 2. Using feature(s) { 1 3 4 5 6 7 9 10 } Accuracy is now 0.81
+On the 3 level of the search tree
+	Removing feature 1. Using feature(s) { 3 4 5 6 7 9 10 } accuracy is 0.862
+	Removing feature 3. Using feature(s) { 1 4 5 6 7 9 10 } accuracy is 0.77
+	Removing feature 4. Using feature(s) { 1 3 5 6 7 9 10 } accuracy is 0.854
+	Removing feature 5. Using feature(s) { 1 3 4 6 7 9 10 } accuracy is 0.752
+	Removing feature 6. Using feature(s) { 1 3 4 5 7 9 10 } accuracy is 0.814
+	Removing feature 7. Using feature(s) { 1 3 4 5 6 9 10 } accuracy is 0.808
+	Removing feature 9. Using feature(s) { 1 3 4 5 6 7 10 } accuracy is 0.788
+	Removing feature 10. Using feature(s) { 1 3 4 5 6 7 9 } accuracy is 0.828
+Removed feature 1. Using feature(s) { 3 4 5 6 7 9 10 } Accuracy is now 0.862
+On the 4 level of the search tree
+	Removing feature 3. Using feature(s) { 4 5 6 7 9 10 } accuracy is 0.806
+	Removing feature 4. Using feature(s) { 3 5 6 7 9 10 } accuracy is 0.86
+	Removing feature 5. Using feature(s) { 3 4 6 7 9 10 } accuracy is 0.766
+	Removing feature 6. Using feature(s) { 3 4 5 7 9 10 } accuracy is 0.842
+	Removing feature 7. Using feature(s) { 3 4 5 6 9 10 } accuracy is 0.88
+	Removing feature 9. Using feature(s) { 3 4 5 6 7 10 } accuracy is 0.832
+	Removing feature 10. Using feature(s) { 3 4 5 6 7 9 } accuracy is 0.85
+Removed feature 7. Using feature(s) { 3 4 5 6 9 10 } Accuracy is now 0.88
+On the 5 level of the search tree
+	Removing feature 3. Using feature(s) { 4 5 6 9 10 } accuracy is 0.82
+	Removing feature 4. Using feature(s) { 3 5 6 9 10 } accuracy is 0.902
+	Removing feature 5. Using feature(s) { 3 4 6 9 10 } accuracy is 0.724
+	Removing feature 6. Using feature(s) { 3 4 5 9 10 } accuracy is 0.874
+	Removing feature 9. Using feature(s) { 3 4 5 6 10 } accuracy is 0.88
+	Removing feature 10. Using feature(s) { 3 4 5 6 9 } accuracy is 0.866
+Removed feature 4. Using feature(s) { 3 5 6 9 10 } Accuracy is now 0.902
+On the 6 level of the search tree
+	Removing feature 3. Using feature(s) { 5 6 9 10 } accuracy is 0.832
+	Removing feature 5. Using feature(s) { 3 6 9 10 } accuracy is 0.778
+	Removing feature 6. Using feature(s) { 3 5 9 10 } accuracy is 0.916
+	Removing feature 9. Using feature(s) { 3 5 6 10 } accuracy is 0.892
+	Removing feature 10. Using feature(s) { 3 5 6 9 } accuracy is 0.914
+Removed feature 6. Using feature(s) { 3 5 9 10 } Accuracy is now 0.916
+On the 7 level of the search tree
+	Removing feature 3. Using feature(s) { 5 9 10 } accuracy is 0.826
+	Removing feature 5. Using feature(s) { 3 9 10 } accuracy is 0.776
+	Removing feature 9. Using feature(s) { 3 5 10 } accuracy is 0.934
+	Removing feature 10. Using feature(s) { 3 5 9 } accuracy is 0.942
+Removed feature 10. Using feature(s) { 3 5 9 } Accuracy is now 0.942
+On the 8 level of the search tree
+	Removing feature 3. Using feature(s) { 5 9 } accuracy is 0.836
+	Removing feature 5. Using feature(s) { 3 9 } accuracy is 0.772
+	Removing feature 9. Using feature(s) { 3 5 } accuracy is 0.974
+Removed feature 9. Using feature(s) { 3 5 } Accuracy is now 0.974
+On the 9 level of the search tree
+	Removing feature 3. Using feature(s) { 5 } accuracy is 0.858
+	Removing feature 5. Using feature(s) { 3 } accuracy is 0.762
+Removed feature 3. Using feature(s) { 5 } Accuracy is now 0.858. Accuracy has DECREASED!
+On the 10 level of the search tree
+	Removing feature 5. Using feature(s) { } accuracy is 0.848
+Removed feature 5. Using feature(s) { } Accuracy is now 0.848. Accuracy has DECREASED!
+
+------------------------- Results -------------------------
+Best accuracy acheived: 0.974 using feature(s) { 3 5 }
