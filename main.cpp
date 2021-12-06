@@ -1,12 +1,13 @@
-#include <vector>
-#include <iostream>
-#include <sstream>
+#include <algorithm>
+#include <chrono>
 #include <fstream>
-#include <string>
+#include <iostream>
 #include <limits>
 #include <math.h>
-#include <algorithm>
 #include <numeric>
+#include <sstream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -250,6 +251,7 @@ vector<vector<float> > parse_table(ifstream& in){
 }
 
 int main(int argc, char *argv[]){
+	chrono::time_point<chrono::system_clock> start, end;
     ifstream fin;
 	if(argc == 1){
 		cout << "Usage: " << argv[0] << " <path to file>" << endl;
@@ -273,6 +275,7 @@ int main(int argc, char *argv[]){
 		 << "   [2] Backwards Elimination" << endl;
 	cin >> user_input;
 
+	start = std::chrono::system_clock::now();
 	if(user_input == 1)
 		fsearch(table);
 	else if(user_input == 2)
@@ -281,6 +284,9 @@ int main(int argc, char *argv[]){
 		cout << "Error. Invalid selection." << endl;
 		return -1;
 	}
+	end = std::chrono::system_clock::now();
 
+	chrono::duration<double> elapsed_seconds = end - start;
+	cout << "Elapsed time: " << elapsed_seconds.count() << "s\n";
     return 0;
 }
