@@ -13,6 +13,7 @@ using namespace std;
 
 // https://www.mathsisfun.com/data/standard-deviation-formulas.html
 // https://www.statology.org/z-score-normalization/
+// https://www.geeksforgeeks.org/chrono-in-c/
 // Helpers used for z-normalizing data
 double sum(const vector<float>& col){
 	double sum = 0;
@@ -286,7 +287,7 @@ int main(int argc, char *argv[]){
 	}
 	end = std::chrono::system_clock::now();
 
-	chrono::duration<double> elapsed_seconds = end - start;
-	cout << "Elapsed time: " << elapsed_seconds.count() << "s\n";
+	chrono::duration<double> elapsed = end - start;
+	cout << "Elapsed time: " << elapsed.count() << "s\n";
     return 0;
 }
