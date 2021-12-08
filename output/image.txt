@@ -1,0 +1,240 @@
+Welcome to Kevin Nguyen's feature selection program
+Normalizing data...
+Data set of 210 with 19 features
+Please enter the algorithm you want to run: 
+   [1] Forward Selection
+   [2] Backwards Elimination
+Beginning forward selection
+Default rate: 0.142857
+On the 1 level of the search tree
+	Adding feature 1. Using feature(s) { 1 } accuracy is 0.266667
+	Adding feature 2. Using feature(s) { 2 } accuracy is 0.414286
+	Adding feature 3. Using feature(s) { 3 } accuracy is 0.142857
+	Adding feature 4. Using feature(s) { 4 } accuracy is 0.138095
+	Adding feature 5. Using feature(s) { 5 } accuracy is 0.161905
+	Adding feature 6. Using feature(s) { 6 } accuracy is 0.195238
+	Adding feature 7. Using feature(s) { 7 } accuracy is 0.238095
+	Adding feature 8. Using feature(s) { 8 } accuracy is 0.252381
+	Adding feature 9. Using feature(s) { 9 } accuracy is 0.157143
+	Adding feature 10. Using feature(s) { 10 } accuracy is 0.547619
+	Adding feature 11. Using feature(s) { 11 } accuracy is 0.533333
+	Adding feature 12. Using feature(s) { 12 } accuracy is 0.514286
+	Adding feature 13. Using feature(s) { 13 } accuracy is 0.547619
+	Adding feature 14. Using feature(s) { 14 } accuracy is 0.409524
+	Adding feature 15. Using feature(s) { 15 } accuracy is 0.428571
+	Adding feature 16. Using feature(s) { 16 } accuracy is 0.471429
+	Adding feature 17. Using feature(s) { 17 } accuracy is 0.542857
+	Adding feature 18. Using feature(s) { 18 } accuracy is 0.466667
+	Adding feature 19. Using feature(s) { 19 } accuracy is 0.552381
+Added feature 19. Using feature(s) { 19 } accuracy is 0.552381
+On the 2 level of the search tree
+	Adding feature 1. Using feature(s) { 19 1 } accuracy is 0.561905
+	Adding feature 2. Using feature(s) { 19 2 } accuracy is 0.766667
+	Adding feature 3. Using feature(s) { 19 3 } accuracy is 0.552381
+	Adding feature 4. Using feature(s) { 19 4 } accuracy is 0.547619
+	Adding feature 5. Using feature(s) { 19 5 } accuracy is 0.57619
+	Adding feature 6. Using feature(s) { 19 6 } accuracy is 0.571429
+	Adding feature 7. Using feature(s) { 19 7 } accuracy is 0.628571
+	Adding feature 8. Using feature(s) { 19 8 } accuracy is 0.657143
+	Adding feature 9. Using feature(s) { 19 9 } accuracy is 0.619048
+	Adding feature 10. Using feature(s) { 19 10 } accuracy is 0.833333
+	Adding feature 11. Using feature(s) { 19 11 } accuracy is 0.833333
+	Adding feature 12. Using feature(s) { 19 12 } accuracy is 0.809524
+	Adding feature 13. Using feature(s) { 19 13 } accuracy is 0.847619
+	Adding feature 14. Using feature(s) { 19 14 } accuracy is 0.704762
+	Adding feature 15. Using feature(s) { 19 15 } accuracy is 0.742857
+	Adding feature 16. Using feature(s) { 19 16 } accuracy is 0.728571
+	Adding feature 17. Using feature(s) { 19 17 } accuracy is 0.809524
+	Adding feature 18. Using feature(s) { 19 18 } accuracy is 0.838095
+Added feature 13. Using feature(s) { 19 13 } accuracy is 0.847619
+On the 3 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 1 } accuracy is 0.747619
+	Adding feature 2. Using feature(s) { 19 13 2 } accuracy is 0.909524
+	Adding feature 3. Using feature(s) { 19 13 3 } accuracy is 0.847619
+	Adding feature 4. Using feature(s) { 19 13 4 } accuracy is 0.833333
+	Adding feature 5. Using feature(s) { 19 13 5 } accuracy is 0.838095
+	Adding feature 6. Using feature(s) { 19 13 6 } accuracy is 0.761905
+	Adding feature 7. Using feature(s) { 19 13 7 } accuracy is 0.82381
+	Adding feature 8. Using feature(s) { 19 13 8 } accuracy is 0.814286
+	Adding feature 9. Using feature(s) { 19 13 9 } accuracy is 0.828571
+	Adding feature 10. Using feature(s) { 19 13 10 } accuracy is 0.838095
+	Adding feature 11. Using feature(s) { 19 13 11 } accuracy is 0.82381
+	Adding feature 12. Using feature(s) { 19 13 12 } accuracy is 0.857143
+	Adding feature 14. Using feature(s) { 19 13 14 } accuracy is 0.847619
+	Adding feature 15. Using feature(s) { 19 13 15 } accuracy is 0.842857
+	Adding feature 16. Using feature(s) { 19 13 16 } accuracy is 0.847619
+	Adding feature 17. Using feature(s) { 19 13 17 } accuracy is 0.857143
+	Adding feature 18. Using feature(s) { 19 13 18 } accuracy is 0.857143
+Added feature 2. Using feature(s) { 19 13 2 } accuracy is 0.909524
+On the 4 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 1 } accuracy is 0.847619
+	Adding feature 3. Using feature(s) { 19 13 2 3 } accuracy is 0.909524
+	Adding feature 4. Using feature(s) { 19 13 2 4 } accuracy is 0.895238
+	Adding feature 5. Using feature(s) { 19 13 2 5 } accuracy is 0.919048
+	Adding feature 6. Using feature(s) { 19 13 2 6 } accuracy is 0.880952
+	Adding feature 7. Using feature(s) { 19 13 2 7 } accuracy is 0.909524
+	Adding feature 8. Using feature(s) { 19 13 2 8 } accuracy is 0.890476
+	Adding feature 9. Using feature(s) { 19 13 2 9 } accuracy is 0.909524
+	Adding feature 10. Using feature(s) { 19 13 2 10 } accuracy is 0.914286
+	Adding feature 11. Using feature(s) { 19 13 2 11 } accuracy is 0.914286
+	Adding feature 12. Using feature(s) { 19 13 2 12 } accuracy is 0.914286
+	Adding feature 14. Using feature(s) { 19 13 2 14 } accuracy is 0.909524
+	Adding feature 15. Using feature(s) { 19 13 2 15 } accuracy is 0.880952
+	Adding feature 16. Using feature(s) { 19 13 2 16 } accuracy is 0.9
+	Adding feature 17. Using feature(s) { 19 13 2 17 } accuracy is 0.914286
+	Adding feature 18. Using feature(s) { 19 13 2 18 } accuracy is 0.866667
+Added feature 5. Using feature(s) { 19 13 2 5 } accuracy is 0.919048
+On the 5 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 1 } accuracy is 0.866667
+	Adding feature 3. Using feature(s) { 19 13 2 5 3 } accuracy is 0.919048
+	Adding feature 4. Using feature(s) { 19 13 2 5 4 } accuracy is 0.914286
+	Adding feature 6. Using feature(s) { 19 13 2 5 6 } accuracy is 0.87619
+	Adding feature 7. Using feature(s) { 19 13 2 5 7 } accuracy is 0.909524
+	Adding feature 8. Using feature(s) { 19 13 2 5 8 } accuracy is 0.885714
+	Adding feature 9. Using feature(s) { 19 13 2 5 9 } accuracy is 0.909524
+	Adding feature 10. Using feature(s) { 19 13 2 5 10 } accuracy is 0.92381
+	Adding feature 11. Using feature(s) { 19 13 2 5 11 } accuracy is 0.92381
+	Adding feature 12. Using feature(s) { 19 13 2 5 12 } accuracy is 0.92381
+	Adding feature 14. Using feature(s) { 19 13 2 5 14 } accuracy is 0.919048
+	Adding feature 15. Using feature(s) { 19 13 2 5 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 16 } accuracy is 0.904762
+	Adding feature 17. Using feature(s) { 19 13 2 5 17 } accuracy is 0.92381
+	Adding feature 18. Using feature(s) { 19 13 2 5 18 } accuracy is 0.871429
+Added feature 10. Using feature(s) { 19 13 2 5 10 } accuracy is 0.92381
+On the 6 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 1 } accuracy is 0.861905
+	Adding feature 3. Using feature(s) { 19 13 2 5 10 3 } accuracy is 0.92381
+	Adding feature 4. Using feature(s) { 19 13 2 5 10 4 } accuracy is 0.919048
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 6 } accuracy is 0.87619
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 7 } accuracy is 0.919048
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 8 } accuracy is 0.885714
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 9 } accuracy is 0.919048
+	Adding feature 11. Using feature(s) { 19 13 2 5 10 11 } accuracy is 0.919048
+	Adding feature 12. Using feature(s) { 19 13 2 5 10 12 } accuracy is 0.914286
+	Adding feature 14. Using feature(s) { 19 13 2 5 10 14 } accuracy is 0.909524
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 16 } accuracy is 0.909524
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 17 } accuracy is 0.914286
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 18 } accuracy is 0.885714
+Added feature 3. Using feature(s) { 19 13 2 5 10 3 } accuracy is 0.92381. Accuracy REMAINED the same
+On the 7 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 1 } accuracy is 0.861905
+	Adding feature 4. Using feature(s) { 19 13 2 5 10 3 4 } accuracy is 0.919048
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 6 } accuracy is 0.87619
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 3 7 } accuracy is 0.919048
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 8 } accuracy is 0.885714
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 9 } accuracy is 0.919048
+	Adding feature 11. Using feature(s) { 19 13 2 5 10 3 11 } accuracy is 0.919048
+	Adding feature 12. Using feature(s) { 19 13 2 5 10 3 12 } accuracy is 0.914286
+	Adding feature 14. Using feature(s) { 19 13 2 5 10 3 14 } accuracy is 0.909524
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 16 } accuracy is 0.909524
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 17 } accuracy is 0.914286
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 18 } accuracy is 0.885714
+Added feature 4. Using feature(s) { 19 13 2 5 10 3 4 } accuracy is 0.919048. Accuracy has DECREASED!
+On the 8 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 1 } accuracy is 0.847619
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 6 } accuracy is 0.871429
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 3 4 7 } accuracy is 0.914286
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 8 } accuracy is 0.880952
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 4 9 } accuracy is 0.914286
+	Adding feature 11. Using feature(s) { 19 13 2 5 10 3 4 11 } accuracy is 0.919048
+	Adding feature 12. Using feature(s) { 19 13 2 5 10 3 4 12 } accuracy is 0.909524
+	Adding feature 14. Using feature(s) { 19 13 2 5 10 3 4 14 } accuracy is 0.909524
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 15 } accuracy is 0.885714
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 16 } accuracy is 0.9
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 17 } accuracy is 0.909524
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 18 } accuracy is 0.87619
+Added feature 11. Using feature(s) { 19 13 2 5 10 3 4 11 } accuracy is 0.919048. Accuracy has DECREASED!
+On the 9 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 1 } accuracy is 0.847619
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 6 } accuracy is 0.871429
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 3 4 11 7 } accuracy is 0.914286
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 8 } accuracy is 0.880952
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 4 11 9 } accuracy is 0.914286
+	Adding feature 12. Using feature(s) { 19 13 2 5 10 3 4 11 12 } accuracy is 0.904762
+	Adding feature 14. Using feature(s) { 19 13 2 5 10 3 4 11 14 } accuracy is 0.919048
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 16 } accuracy is 0.9
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 17 } accuracy is 0.904762
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 18 } accuracy is 0.87619
+Added feature 14. Using feature(s) { 19 13 2 5 10 3 4 11 14 } accuracy is 0.919048. Accuracy has DECREASED!
+On the 10 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 1 } accuracy is 0.866667
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 6 } accuracy is 0.861905
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 3 4 11 14 7 } accuracy is 0.914286
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 8 } accuracy is 0.890476
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 4 11 14 9 } accuracy is 0.914286
+	Adding feature 12. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 } accuracy is 0.919048
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 15 } accuracy is 0.9
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 16 } accuracy is 0.895238
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 14 17 } accuracy is 0.919048
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 18 } accuracy is 0.885714
+Added feature 12. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 } accuracy is 0.919048. Accuracy has DECREASED!
+On the 11 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 1 } accuracy is 0.866667
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 6 } accuracy is 0.871429
+	Adding feature 7. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 } accuracy is 0.914286
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 8 } accuracy is 0.880952
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 9 } accuracy is 0.914286
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 15 } accuracy is 0.9
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 16 } accuracy is 0.895238
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 17 } accuracy is 0.914286
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 18 } accuracy is 0.880952
+Added feature 7. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 } accuracy is 0.914286. Accuracy has DECREASED!
+On the 12 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 1 } accuracy is 0.857143
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 6 } accuracy is 0.866667
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 8 } accuracy is 0.880952
+	Adding feature 9. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 } accuracy is 0.914286
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 16 } accuracy is 0.890476
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 17 } accuracy is 0.909524
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 18 } accuracy is 0.871429
+Added feature 9. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 } accuracy is 0.914286. Accuracy has DECREASED!
+On the 13 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 1 } accuracy is 0.857143
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 6 } accuracy is 0.871429
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 8 } accuracy is 0.87619
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 16 } accuracy is 0.890476
+	Adding feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 } accuracy is 0.909524
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 18 } accuracy is 0.87619
+Added feature 17. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 } accuracy is 0.909524. Accuracy has DECREASED!
+On the 14 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 1 } accuracy is 0.852381
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 6 } accuracy is 0.866667
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 8 } accuracy is 0.87619
+	Adding feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 } accuracy is 0.890476
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 16 } accuracy is 0.890476
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 18 } accuracy is 0.866667
+Added feature 15. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 } accuracy is 0.890476. Accuracy has DECREASED!
+On the 15 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 1 } accuracy is 0.857143
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 6 } accuracy is 0.861905
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 8 } accuracy is 0.861905
+	Adding feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 } accuracy is 0.895238
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 18 } accuracy is 0.871429
+Added feature 16. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 } accuracy is 0.895238. Accuracy has DECREASED!
+On the 16 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 1 } accuracy is 0.866667
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 6 } accuracy is 0.866667
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 8 } accuracy is 0.866667
+	Adding feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 } accuracy is 0.87619
+Added feature 18. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 } accuracy is 0.87619. Accuracy has DECREASED!
+On the 17 level of the search tree
+	Adding feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 } accuracy is 0.871429
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 6 } accuracy is 0.857143
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 8 } accuracy is 0.866667
+Added feature 1. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 } accuracy is 0.871429. Accuracy has DECREASED!
+On the 18 level of the search tree
+	Adding feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 6 } accuracy is 0.871429
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 8 } accuracy is 0.866667
+Added feature 6. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 6 } accuracy is 0.871429. Accuracy has DECREASED!
+On the 19 level of the search tree
+	Adding feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 6 8 } accuracy is 0.852381
+Added feature 8. Using feature(s) { 19 13 2 5 10 3 4 11 14 12 7 9 17 15 16 18 1 6 8 } accuracy is 0.852381. Accuracy has DECREASED!
+
+------------------------- Results -------------------------
+Best accuracy achieved: 0.92381 using feature(s) { 19 13 2 5 10 3 }
+Elapsed time: 0.0865811s
